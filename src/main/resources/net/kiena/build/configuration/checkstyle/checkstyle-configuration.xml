@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Copyright © 2016–2017 Kiena
+Copyright © 2016–2018 Kiena
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -90,7 +90,17 @@ limitations under the License.
 			<property name="forceStrictCondition" value="true"/>
 		</module>
 		<module name="InterfaceIsType"/>
+		<module name="JavadocMethod"/>
+		<module name="JavadocStyle"/>
+		<module name="JavadocTagContinuationIndentation">
+			<property name="offset" value="0"/>
+		</module>
+		<module name="JavadocType">
+			<property name="authorFormat" value="^\p{Lu}[\S&amp;&amp;[^\,]&amp;&amp;\P{Lu}]*(?:[  ]\p{Lu}[\S&amp;&amp;[^\,]&amp;&amp;\P{Lu}]*)*(?:\, \p{Lu}[\S&amp;&amp;[^\,]&amp;&amp;\P{Lu}]*(?:[  ]\p{Lu}[\S&amp;&amp;[^\,]&amp;&amp;\P{Lu}]*)*)*$"/>
+		</module>
+		<module name="JavadocVariable"/>
 		<module name="ModifierOrder"/>
+		<module name="NonEmptyAtclauseDescription"/>
 		<module name="RedundantModifier"/>
 		<module name="Regexp">
 			<property name="format" value="\R{3,}"/>
@@ -113,8 +123,19 @@ limitations under the License.
 		<module name="SimplifyBooleanReturn"/>
 		<module name="SingleSpaceSeparator"/>
 		<module name="StringLiteralEquality"/>
+		<module name="SummaryJavadocCheck"/>
 		<module name="UnnecessaryParentheses"/>
 		<module name="UnusedImports"/>
 		<module name="UpperEll"/>
+		<module name="WriteTag">
+			<property name="tag" value="@author"/>
+			<property name="tagFormat" value="^\p{Lu}[\S&amp;&amp;[^\,]&amp;&amp;\P{Lu}]*(?:[  ]\p{Lu}[\S&amp;&amp;[^\,]&amp;&amp;\P{Lu}]*)*(?:\, \p{Lu}[\S&amp;&amp;[^\,]&amp;&amp;\P{Lu}]*(?:[  ]\p{Lu}[\S&amp;&amp;[^\,]&amp;&amp;\P{Lu}]*)*)*$"/>
+			<property name="tagSeverity" value="ignore"/>
+		</module>
+		<module name="WriteTag">
+			<property name="tag" value="@since"/>
+			<property name="tagFormat" value="^\d+$"/>
+			<property name="tagSeverity" value="ignore"/>
+		</module>
 	</module>
 </module>
