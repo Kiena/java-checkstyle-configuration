@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Copyright © 2016–2018 Kiena
+Copyright © 2016–2019 Kiena
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -54,8 +54,8 @@ limitations under the License.
 		<checkstyle.resourceIncludes/><!-- Sources, resources, and their test counterparts are treated equally. -->
 		<maven.compiler.failOnWarning>true</maven.compiler.failOnWarning>
 		<maven.compiler.fork>true</maven.compiler.fork>
-		<maven.compiler.source>9</maven.compiler.source>
-		<maven.compiler.target>9</maven.compiler.target>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
 		<netbeans.hint.licensePath>${project.basedir}/licenseheader.txt</netbeans.hint.licensePath>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>

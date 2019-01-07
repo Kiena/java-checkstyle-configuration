@@ -1,4 +1,4 @@
 Myra
-Copyright © 2017 Kiena
+Copyright © 2017–2019 Kiena
 
 This product includes software developed by Kiena.
